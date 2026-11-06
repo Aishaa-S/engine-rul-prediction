@@ -24,7 +24,7 @@ NASA C-MAPSS turbofan engine simulation data, subset **FD001** (100 training eng
 | Random Forest | 20.51 | 14.11 |
 | XGBoost | 18.61 | 13.16 |
 
-XGBoost performed best. Cross-validation RMSE (18.80) closely matched test RMSE (18.61), indicating the model generalizes to unseen engines.
+XGBoost performed best on the official test set (RMSE 18.61). Engine-grouped cross-validation over all cycles gave a similar ranking of models, though it measures a slightly different task than the last-cycle test evaluation.
 
 ![Predicted vs actual](rul_pred_vs_actual.png)
 ![Feature importance](feature_importance.png)
